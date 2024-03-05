@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  font-family: Kanit, sans-serif;
+}
+.header {
+  position: relative;
+  padding: 20px;
+  text-align: right;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.header img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 27% 0% 17% 83% / 36% 0% 33% 47% ;
+  width: 670px; 
+  z-index: -1;
+  height: 300px;
+  animation: slideUp 1s ease-out forwards;
+}
+.nav-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+}
+
+.nav-item a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.sign-buttons {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.sign-buttons a {
+  text-decoration: none;
+  color: rgb(239, 221, 221);
+  padding: 8px 16px;
+  margin-left: 5px;
+}
+
+.sign-in {
+  color: #ff4b4b;
+  background-color: rgb(194, 194, 194);
+}
+
+.sign-up {
+  color: #ff4b4b;
+  background-color: black;
+}
+
+.sign-in:hover, .sign-up:hover {
+  opacity: 0.9;
+}
+
+.logo{
+  /* font-weight: bold; */
+  text-decoration: none;
+  font-size: 2em;
+  margin-left: 2em;
+  color: rgb(4, 4, 4);
+  float: left;
+}
+
+.hero {
+  display: flex;
+  padding: 50px;
+  align-items: center;
+  /* background-color: #fff;  */
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero-text {
+  flex: 1;
+  color: #333;
+  padding-right: 50px; 
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem; 
+  /* color: #333; */
+  margin-bottom: 20px;
+  color: black;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  line-height: 1.5; 
+}
+
+
+
+.hero-text button {
+  background-color: #ff4b4b; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero-text button:hover{
+  background-color: #e04343; 
+}
+
+.hero-img {
+  flex: 1;
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #fff;
+  font-size: 1.2em;
+}
+
+
+.service-item {
+  text-align: center;
+  flex-basis: 24%; 
+  margin: 10px;
+  padding: 10px;
+  background-color: white;  
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+
+
+.service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.learn {
+  display: flex;
+  padding: 50px;
+  background-color: white; 
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.learn-image {
+  margin-right: 10px; 
+  margin-left: 250px;
+  width: 40%;
+}
+
+.learn-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  animation: 3s 0s alternate slideInFromLeft;
+}
+
+.learn-text {
+  flex: 2;
+}
+
+.learn-text h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  animation: 3s 0s alternate slideInFromLeft;
+}
+
+.learn-text ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.learn-text ul li {
+  margin-bottom: 10px;
+  animation: 3s 0s alternate slideInFromLeft;
+}
+
+.learn-text button {
+  background-color: #ff4b4b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 1em;
+  animation: 3s 0s alternate slideInFromLeft;
+}
+
+.learn-text button:hover {
+  background-color: #e04343; 
+}
+
+
+@media (max-width: 768px) {
+  .header nav a, .header button {
+    margin: 0 5px; 
+  }
+
+  .hero {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .hero-text, .hero-img {
+    flex-basis: 100%;
+  }
+
+  .hero-text {
+    padding-right: 0; 
+  }
+
+  .hero-img {
+    margin-top: 20px; 
+  }
+
+  .services .service-item {
+    flex-basis: 100%; 
+    margin: 10px 0;
+  }
+
+  .learn {
+    flex-direction: column;
+  }
+
+  .learn-image {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .learn-text {
+    flex-basis: 100%;
+  }
+}
